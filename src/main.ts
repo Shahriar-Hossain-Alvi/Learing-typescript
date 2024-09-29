@@ -336,7 +336,47 @@
 //     }
 // }
 
+
 // type FormTodo = Required<Pick<Todo,"title" | "address">>
+
+
+// function checkLength(a: string, b: number) {
+//     return a.length < b;
+// }
+
+// type ReturnOfLengthCheck = ReturnType<typeof checkLength>
+
+// type Func = () => void
+
+// type ReturnOfLengthCheck1 = ReturnType<Func>
+
+
+// type Params = Parameters<typeof checkLength>
+
+// function checkParams(...a: Params) {
+//     console.log(`${a[0]} and ${a[1]}`);
+// }
+
+// checkParams("Hello", 5);
+
+// function checkParams2(a: Params[0], b:Params[1]) {
+//     console.log(`${a} and ${b}`);
+// }
+
+// checkParams2("world", 5);
+
+
+// type Person = {
+//     name: string
+//     age: number
+// }
+
+// type PeopleGroupedByName = {
+//     [index: string]: Person[]
+// }
+
+
+// type PeopleGroupedByName = Record<string, Person[]>
 
 
 
