@@ -385,55 +385,76 @@
 
 // type Value = Awaited<ReturnType<typeof fetchSomething>>
 
-type Todo = {
-    title: string
-    priority: "High" | "Normal" | "Low"
-    isComplete: boolean
-    description?: string
-    dueDate: string | Date
-}
+// type Todo = {
+//     title: string
+//     priority: "High" | "Normal" | "Low"
+//     isComplete: boolean
+//     description?: string
+//     dueDate: string | Date
+// }
 
-function extendTodo(todo: Todo) {
-    console.log(todo.dueDate); // dueDate is string | Date
-}
+// function extendTodo(todo: Todo) {
+//     console.log(todo.dueDate); // dueDate is string | Date
+// }
 
-function extendTodo1(todo: Todo) {
-    if (typeof todo.dueDate === "string") {
-        console.log(todo.dueDate); // dueDate is string
-    } else {
-        console.log(todo.dueDate.getDate()); // dueDate is Date
-    }
-}
-
-
-function extendTodo2(todo: Todo) {
-    if (todo.dueDate instanceof Date) {
-        console.log(todo.dueDate); // dueDate is date
-    } else {
-        console.log(todo.dueDate); // dueDate is string
-    }
-}
-
-function extendTodo3(todo: Todo) {
-    if (todo.dueDate instanceof Date) {
-        //does something 
-        return
-    } else {
-        console.log(todo.dueDate); // dueDate is string
-    }
-}
+// function extendTodo1(todo: Todo) {
+//     if (typeof todo.dueDate === "string") {
+//         console.log(todo.dueDate); // dueDate is string
+//     } else {
+//         console.log(todo.dueDate.getDate()); // dueDate is Date
+//     }
+// }
 
 
-function extendTodo4(todo: Todo) {
-    switch (todo.priority) {
-        case "High":
-            console.log(todo.priority);
-            break
-        case "Normal":
-            console.log(todo.priority);
-            break
-        case "Low":
-            console.log(todo.priority);
-            break
-    }
-}
+// function extendTodo2(todo: Todo) {
+//     if (todo.dueDate instanceof Date) {
+//         console.log(todo.dueDate); // dueDate is date
+//     } else {
+//         console.log(todo.dueDate); // dueDate is string
+//     }
+// }
+
+// function extendTodo3(todo: Todo) {
+//     if (todo.dueDate instanceof Date) {
+//         //does something 
+//         return
+//     } else {
+//         console.log(todo.dueDate); // dueDate is string
+//     }
+// }
+
+
+// function extendTodo4(todo: Todo) {
+//     switch (todo.priority) {
+//         case "High":
+//             console.log(todo.priority);
+//             break
+//         case "Normal":
+//             console.log(todo.priority);
+//             break
+//         case "Low":
+//             console.log(todo.priority);
+//             break
+//         default:
+//             console.log(todo.priority);
+//     }
+// }
+
+// type Todo = {
+//     title: string
+// }
+
+
+// fetch("asd")
+//     .then(res => res.json())
+//     .then(data => {
+//         return data as Todo
+//     }).then(todo => {
+
+//     })
+
+
+// const a: any = 2;
+// (a as string).length
+
+
