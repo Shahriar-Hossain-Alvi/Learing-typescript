@@ -481,3 +481,37 @@
 // } satisfies Todo
 
 //todo1.dueDate.setDate(4) // this does not gives error because using "satisfies Todo" the todo1 object satisfies the types of Todo
+
+
+// type SuccessResponse = {
+//     status: "Success"
+//     data: { id: string; name: string; }
+// }
+
+// type ErrorResponse = {
+//     status: "Error"
+//     errorMessage: string
+// }
+
+// type UserApiResponse = {
+//     status: "Success" | "Error"
+//     data?: { id: string; name: string; }
+//     errorMessage?: string
+// }
+
+// function handleResponse(res: UserApiResponse) {
+//     if (res.status === "Success")
+//         console.log(res.data.name);
+//     else
+//         console.log(res.errorMessage.length);
+// }
+
+
+// type UserApiResponse1 = SuccessResponse | ErrorResponse
+
+// function handleResponse1(res: UserApiResponse1) {
+//     if (res.status === "Success")
+//         console.log(res.data.name);
+//     else
+//         console.log(res.errorMessage.length);
+// }
