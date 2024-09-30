@@ -458,3 +458,26 @@
 // (a as string).length
 
 
+// type Todo = {
+//     title: string
+//     dueDate: string | Date
+//     isComplete: boolean
+// }
+
+
+// const todo: Todo = {
+//     title: "asd",
+//     dueDate: new Date(),
+//     isComplete: true
+// }
+
+//todo.dueDate.setDate(4) // this line gives error even if the due Date is set to new date in the todo object. Thats because due Date() can also be a string and string does not have setDate() function. 
+
+
+// const todo1 = {
+//     title: "adas",
+//     dueDate: new Date(),
+//     isComplete: false
+// } satisfies Todo
+
+//todo1.dueDate.setDate(4) // this does not gives error because using "satisfies Todo" the todo1 object satisfies the types of Todo
